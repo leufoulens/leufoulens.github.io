@@ -4,7 +4,7 @@ let counter = document.getElementById("main-counter")
 let mainContainer = document.getElementById("main-container")
 let counterValue = 0
 
-button.onmousedown = function() {
+function exercise() {
     if(counterValue < 29){
     turnik.style.backgroundPosition = "100%"
     counterValue++
@@ -27,7 +27,19 @@ button.onmousedown = function() {
     }
 }
 }
+button.onmousedown = function(){
+    exercise()
+}
 button.onmouseup = function() {
     turnik.style.backgroundPosition = "0%"
 }
+
+button.ontouchstart = function(){
+    turnik.style.backgroundPosition = "100%"
+}
+button.ontouchend = function() {
+    turnik.style.backgroundPosition = "0%"
+}
+
+
 
