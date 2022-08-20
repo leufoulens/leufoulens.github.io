@@ -23,7 +23,7 @@ body{
 #turnik {
     height: 200px;
     width: 200px;
-    background: url("sources/ExerciseSpriteSheet.png");
+    background: url("ExerciseSpriteSheet.png");
     background-size: 200%;
     background-position: 0%;
 }
@@ -49,7 +49,7 @@ body{
 }
 
 #alert-box-image {
-    background: url("sources/AlertSpriteSheet.png");
+    background: url("AlertSpriteSheet.png");
     height: 200px;
     width: 200px;
     background-size: 200%;
