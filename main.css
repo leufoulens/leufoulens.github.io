@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#main-container {
+    height: 400px;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+#turnik {
+    height: 200px;
+    width: 200px;
+    background: url("sources/ExerciseSpriteSheet.png");
+    background-size: 200%;
+    background-position: 0%;
+}
+
+#overlay {
+    transition: 0.5s;
+}
+
+#alert-box {
+    position: absolute;
+    background: white;
+    height: 500px;
+    width: 400px;
+    border-radius: 8px;
+    left:calc(50% - 200px);
+    top:calc(50% - 250px);
+    display: flex;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: margin-top 2s ;
+}
+
+#alert-box-image {
+    background: url("sources/AlertSpriteSheet.png");
+    height: 200px;
+    width: 200px;
+    background-size: 200%;
+    background-position: 0%;
+    margin-bottom: 30px;
+}
