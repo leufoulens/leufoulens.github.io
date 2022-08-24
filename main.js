@@ -33,9 +33,11 @@ button.onmousedown = function(){
 button.onmouseup = function() {
     turnik.style.backgroundPosition = "0%"
 }
-
 button.ontouchstart = function(){
     turnik.style.backgroundPosition = "100%"
+}
+button.ontouchmove = function(){
+    exercise()
 }
 button.ontouchend = function() {
     turnik.style.backgroundPosition = "0%"
