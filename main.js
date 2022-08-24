@@ -28,16 +28,21 @@ function exercise() {
 }
 }
 button.onmousedown = function(){
+    console.log("onmousedown")
     exercise()
+
 }
 button.onmouseup = function() {
     turnik.style.backgroundPosition = "0%"
 }
 button.ontouchstart = function(){
-    turnik.style.backgroundPosition = "100%"
-}
-button.ontouchmove = function(){
+    console.log("touchstart")
     exercise()
+}
+
+button.ontouchmove = function(){
+    console.log("touchmove")
+    
 }
 button.ontouchend = function() {
     turnik.style.backgroundPosition = "0%"
